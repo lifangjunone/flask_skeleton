@@ -61,7 +61,7 @@ def create_db():
     mydb = mysql.connector.connect(
         host=BaseConfig.MYSQL_HOST,  # 默认用主机名
         user=BaseConfig.MYSQL_USER,  # 默认用户名
-        password=BaseConfig.REDIS_PASSWORD,  # mysql密码
+        password=BaseConfig.MYSQL_PASSWORD,  # mysql密码
         charset='utf8'  # 编码方式
     )
     cursor = mydb.cursor()
